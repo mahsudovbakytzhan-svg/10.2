@@ -1,7 +1,13 @@
-const button = document.querySelector('#jsButton');
+const button1 = document.querySelector('#onclick');
+button1.addEventListener('click',() =>{
+  console.log("Кнопка нажата!")
+})
 
-button.addEventListener('click', () => {
-  alert('Кнопка нажата через JS!');
+
+const button2 = document.querySelector('#jsButton');
+
+button2.addEventListener('click', () => {
+  console.log('Кнопка нажата через JS!');
 });
 
 //3 tapsyrma
@@ -47,5 +53,5 @@ const input = document.getElementById('textInput');
 
   const keyboardInput = document.getElementById('keyboardInput');
   keyboardInput.addEventListener('keydown', (event) => {
-    console.log('Нажата клавиша:', event.key);
+    console.log('Нажата клавиша:', event.code);
   }); 
